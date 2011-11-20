@@ -33,9 +33,23 @@ char incoming_char=0;      //Will hold the incoming character from the Serial Po
 NewSoftSerial cell(2,3);  //Create a 'fake' serial port. Pin 2 is the Rx pin, pin 3 is the Tx pin.
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
+//Pin References
+/*
+buzzer
+ lcd
+ 
+ 
+ */
+
 
 void setup()
 {
+
+  /*Load configuration variables from MetroChange_Config.pde to set these vars:
+   phoneNumber
+   */
+ 
+  
 
   //SMS
   Serial.begin(9600);
@@ -48,11 +62,14 @@ void setup()
   lcdPrint(0,"hello");
   lcdPrint(1,"world");
 
+
+
 }
 
 
 void loop() {
   //smsCheck();
 }
+
 
 
