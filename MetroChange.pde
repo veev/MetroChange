@@ -17,16 +17,16 @@
  NewSoftSerial Library by Mikal Hart - http://arduiniana.org/libraries/newsoftserial/
  LiquidCrystal Library - http://arduino.cc/en/Reference/LiquidCrystal
  
- MetroChange uses code from these sources:
+ MetroChange uses code from/was informed by these sources:
  SM5100B-D example code and reference by Ryan Owens - http://www.sparkfun.com/products/9607
+ 
  
  */
 
 //include libraries
-#include <NewSoftSerial.h>  //Include the NewSoftSerial library to send serial commands to the cellular module.
+#include <NewSoftSerial.h>  //Include the NewSoftSerial library to send serial commands to the GSM module.
 #include <string.h>         //Used for string manipulations
-#include <LiquidCrystal.h>
-
+#include <LiquidCrystal.h>  //Used to display things on an LCD screen
 
 //create objects and variables
 char incoming_char=0;      //Will hold the incoming character from the Serial Port.
@@ -38,7 +38,6 @@ void setup()
 {
 
   //SMS
-  //Initialize serial ports for communication.
   Serial.begin(9600);
   cell.begin(9600);
   Serial.println("Starting SM5100B Communication...");

@@ -1,7 +1,6 @@
 /*
 
 Display messages on the LCD screen in the kiosk using the LiquidCrystal Library.
-http://www.arduino.cc/en/Tutorial/LiquidCrystal
 
 */
 

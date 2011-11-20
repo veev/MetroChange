@@ -1,6 +1,8 @@
+/*
 
+Send SMS messages from the MetroChange kiosk, receive configuration variables. 
 
-
+*/
 
 void smsCheck(){
 
