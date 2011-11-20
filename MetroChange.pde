@@ -13,9 +13,12 @@
  
  *** References and Thanks ***
  
- Metrochange uses:
+ MetroChange uses these libraries:
  NewSoftSerial Library by Mikal Hart - http://arduiniana.org/libraries/newsoftserial/
  LiquidCrystal Library - http://arduino.cc/en/Reference/LiquidCrystal
+ 
+ MetroChange uses code from these sources:
+ SM5100B-D example code and reference by Ryan Owens - http://www.sparkfun.com/products/9607
  
  */
 
@@ -49,8 +52,8 @@ void setup()
 }
 
 
-
 void loop() {
   //smsCheck();
 }
+
 
